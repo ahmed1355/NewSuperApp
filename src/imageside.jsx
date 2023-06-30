@@ -1,5 +1,4 @@
 import React from "react";
-// import "./common.css";
 import images1 from "./assets/image 1.png";
 import imagestyles from "./imageside.module.css";
 

@@ -1,0 +1,50 @@
+.weatherContainer {
+  width: 507px;
+    min-height: 20vh;
+    background: #101744;
+    border-radius: 12px;
+    top: 40px;
+    position: relative;
+    right: 100px;
+  }
+  
+  .header {
+    height: 7vh;
+    background: #ff4ade;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  .weatherInfo {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .weatherItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .weatherIcon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .temperature {
+    margin-bottom: 12px;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .wind {
+    margin-bottom: 12px;
+    font-size: 24px;
+    margin-top: 10px;
+  }
