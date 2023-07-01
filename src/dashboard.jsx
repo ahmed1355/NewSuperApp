@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 import Catstyles from "./category.module.css";
 import { useNavigate } from "react-router-dom";
 import Notes from './notes'
+import Timer from './time'
 function Dashboard({ location }) {
   const navigate = useNavigate();
 
@@ -25,6 +26,8 @@ function Dashboard({ location }) {
         </div>
           <Notes/>
         <News />
+        <Timer/>
+        
       </div>
       <button className={Catstyles.signUpent} onClick={handleClick}>
         Next Page

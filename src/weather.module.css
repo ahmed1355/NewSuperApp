@@ -3,9 +3,9 @@
     min-height: 20vh;
     background: #101744;
     border-radius: 12px;
-    top: 40px;
+    top: 20px;
     position: relative;
-    right: 100px;
+    /* right: 100px; */
   }
   
   .header {

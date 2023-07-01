@@ -6,7 +6,7 @@
     padding: 6px;
     display: flex;
     position:relative;
-    right:100px   
+    /* right:0px    */
 }
 
 .car_img{
