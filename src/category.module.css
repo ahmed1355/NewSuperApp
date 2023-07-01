@@ -88,6 +88,23 @@ img {
   position: relative;
 }
 
+/* for dashboard */
+.signUpent {
+  color: white;
+  font-family: DM Sans;
+  background: green;
+  border-radius: 38.857px;
+  border: none;
+  width: 150px;
+  height: 50px;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  top: 220px;
+  left: 1510px;
+  position: relative;
+}
+
+
 .error {
   color: red;
   font-size: 25.14px;
