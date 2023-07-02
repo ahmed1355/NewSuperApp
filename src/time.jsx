@@ -50,7 +50,7 @@ const Timer = () => {
     setTimeout(() => {
       audio.pause();
       audio.currentTime = 0;
-    }, 5000);
+    }, 4000);
   };
   const { hours, minutes, seconds } = time;
   const totalSeconds = seconds + minutes * 60 + hours * 60 * 60;
