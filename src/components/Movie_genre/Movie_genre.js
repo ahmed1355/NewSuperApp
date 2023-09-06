@@ -6,16 +6,16 @@ function Movie_genre({ title }) {
     const [data, setData] = useState([]);
   
   
-  useEffect(() => {
-    const options = {
-      method: "GET",
-      url: `https://moviesdatabase.p.rapidapi.com/titles`,
-      params: { genre: `${title}`, year: "2020" },
-      headers: {
-        "X-RapidAPI-Key": "d0e5c9363dmsh94606def0ddfe0cp15266cjsn969a6edac183",
-        "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
-      },
-    };
+    useEffect(() => {
+      const options = {
+        method: "GET",
+        url: `https://moviesdatabase.p.rapidapi.com/titles`,
+        params: { genre: `${title}`, year: "2022" },
+        headers: {
+          "X-RapidAPI-Key": "d0e5c9363dmsh94606def0ddfe0cp15266cjsn969a6edac183",
+          "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
+        },
+      };
 
     axios
       .request(options)
