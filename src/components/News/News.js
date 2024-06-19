@@ -7,23 +7,18 @@ function News() {
   const [date, setDate] = useState("00-00-0000");
   const [currTime, setCurrTime] = useState("00:00:00");
 
-  // useEffect(() => {
-  //   axios
-  //     .get(
-  //       "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=31a3d45f60274211864d261cadcfaf7c")      
-  //     .then((res) => setNews(res.data.articles[0]));
-  // }, []);
-
   useEffect(() => {
     axios
-      .get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=31a3d45f60274211864d261cadcfaf7c")
+      .get(
+        "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=31a3d45f60274211864d261cadcfaf7c"
+      )
       .then((res) => setNews(res.data.articles[0]))
-      .catch(error => {
+      .catch((error) => {
         // Handle the error here, e.g. show an error message to the user
         console.error("Error fetching news:", error);
       });
   }, []);
-  
+
   useEffect(() => {
     const ddmmyyyy = new Date(news.publishedAt);
     let day = ddmmyyyy.getDate();
