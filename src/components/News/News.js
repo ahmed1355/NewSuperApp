@@ -12,7 +12,7 @@ function News() {
       .get(
         "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=31a3d45f60274211864d261cadcfaf7c"
       )
-      .then((res) => setNews(res.data.articles[0]))
+      .then((res) => setNews(res.data.articles[3]))
       .catch((error) => {
         // Handle the error here, e.g. show an error message to the user
         console.error("Error fetching news:", error);
